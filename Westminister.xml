@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="WestministerSuite" parallel="tests">
+<listeners>
+<listener class-name="com.listener.TestListener"></listener>
+</listeners>
+  <test thread-count="5" name="WestministerTest1">
+  <parameter name="Browser" value="Chrome"></parameter>
+    <classes>
+      <class name="com.pluto.testcases.TC01_AdminScenarios"/>
+      <class name="com.pluto.testcases.TC02_FileManager"/>
+    </classes>
+  </test>
+<!--   
+ <test thread-count="5" name="WestministerTest2">
+  <parameter name="Browser" value="Edge"></parameter>
+    <classes>
+      <class name="com.pluto.testcases.TC02_FileManager"/>
+    </classes>
+  </test>  -->
+</suite> <!-- WestministerSuite -->
