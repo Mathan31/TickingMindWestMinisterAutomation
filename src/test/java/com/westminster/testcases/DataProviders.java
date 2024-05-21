@@ -1,4 +1,4 @@
-package com.pluto.testcases;
+package com.westminster.testcases;
 
 import com.data.dynamic.FakerDataFactory;
 import org.testng.annotations.DataProvider;
